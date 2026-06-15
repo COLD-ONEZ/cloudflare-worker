@@ -1,5 +1,3 @@
-
-
 export default {
   async fetch(request, env) {
     // ── CORS preflight ────────────────────────────────────────────────────
