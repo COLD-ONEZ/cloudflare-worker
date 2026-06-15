@@ -1,20 +1,4 @@
-/**
- * Cloudflare Worker — GDrive Direct Download Proxy
- * =================================================
- * Streams a Google Drive file directly to the browser with the correct
- * original filename (bypassing the virus-scan redirect page).
- *
- * SETUP:
- *   1. Create a new Worker in https://dash.cloudflare.com → Workers & Pages
- *   2. Paste this file as the Worker script
- *   3. Add an Environment Variable (Settings → Variables):
- *        GDRIVE_API_KEY  =  your Google Drive API key
- *   4. Deploy. Copy the Worker URL (e.g. https://sfactory-dl.yourname.workers.dev)
- *   5. Set that URL as WORKER_URL in your Vercel environment variables
- *
- * REQUEST FORMAT (handled automatically by the backend):
- *   GET https://your-worker.workers.dev?id=FILE_ID&name=Movie.S01E01.1080p.mkv
- */
+
 
 export default {
   async fetch(request, env) {
